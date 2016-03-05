@@ -6,7 +6,7 @@
 package heap;
 /****************************************************************************
  *       This demonstrates binary heap operations along with the heapSort.
- *
+ *       All credit is due to Prof Adamchik - CMU
  *****************************************************************************/
 import java.util.*;
 
@@ -16,7 +16,7 @@ public class Heap<AnyType extends Comparable<AnyType>>
    private static final int CAPACITY = 2;
 
    private int size;            // Number of elements in heap
-   private AnyType[] heap;     // The heap array
+   private AnyType[] heap;      // The heap array
 
    public Heap()
    {
@@ -32,7 +32,7 @@ public class Heap<AnyType extends Comparable<AnyType>>
       size = array.length;
       heap = (AnyType[]) new Comparable[array.length+1];
 
-      System.arraycopy(array, 0, heap, 1, array.length);//we do not use 0 index
+      System.arraycopy(array, 0, heap, 1, array.length); //we do not use 0 index
 
       buildHeap();
    }
@@ -97,7 +97,7 @@ public class Heap<AnyType extends Comparable<AnyType>>
       heap[1] = heap[size--];
       percolatingDown(1);
       return min;
-	}
+   }
 
  /**
   * Inserts a new item
