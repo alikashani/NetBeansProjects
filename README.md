@@ -1,6 +1,6 @@
 Java projects
 __________________________________
-      Data Structures,
-      Algorithms,
-      Practice,
-      Etc.
+Data Structures,
+Algorithms,
+Practice,
+Etc.
