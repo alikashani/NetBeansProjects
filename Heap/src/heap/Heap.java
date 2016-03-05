@@ -41,7 +41,7 @@ public class Heap<AnyType extends Comparable<AnyType>>
   */
    private void buildHeap()
    {
-      for (int k = size/2; k > 0; k--)
+      for (int k = size / 2; k > 0; k--)
       {
          percolatingDown(k);
       }
