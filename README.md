@@ -1,6 +1,6 @@
-Mostly Java projects:
+Java projects
 __________________________________
       Data Structures,
       Algorithms,
-      Practice, 
+      Practice,
       Etc.
