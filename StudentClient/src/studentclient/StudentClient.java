@@ -21,11 +21,11 @@ public class StudentClient {
         System.out.println(s1.getSSN());
         System.out.println(s1.getGPA());
         
-        System.out.println(s2.convertToString());
+        System.out.println(s2.toString());
         
-        if (s2.isEqualTo(s1)) {
+        if (s2.equals(s1))
             System.out.println("The compared objects are equal!");
-        } else {
+        else {
             System.out.println("The objects are NOT equal.");
             s2.setName("Ali Kashani");
             s2.setSSN("1234567");

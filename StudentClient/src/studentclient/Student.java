@@ -31,7 +31,6 @@ public class Student {
     }
     
     public String getSSN() {
-        
         return ssn;
     }
     
@@ -51,19 +50,16 @@ public class Student {
             gpa = newGPA;            
     }
     
-    public String convertToString() {
+    @Override
+    public String toString() {
         String objString = name + "\n" + ssn + "\n" + gpa + "\n";
         return objString;
     }
     
-    public boolean isEqualTo(Object obj) {
-        boolean tof;
-        if (obj.equals(this)){
-            tof = true;
-        } else {
-            tof = false;
-        }
-        
-        return tof;
+    @Override
+    public boolean equals(Object obj) {
+        boolean a = false;
+        if(obj == this) a = true;
+        return a;
     }
 }

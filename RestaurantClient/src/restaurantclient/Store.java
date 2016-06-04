@@ -18,7 +18,22 @@ public class Store {
         name = newName;
         return name;
     }
+    
+    @Override
+    public String toString() {
+        String str = "";
+        str += "This store's name is " + this.name + "\n" +
+                "The tax rate is " + TAX_RATE;
+        return str;
+    }
       
-      
+    @Override
+    public boolean equals(Object o) {
+        Boolean b = false;
+        if (this == o) {
+            b = true;
+        }
+        return b;
+    }
       
 }

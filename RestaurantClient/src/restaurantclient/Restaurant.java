@@ -13,26 +13,31 @@ public class Restaurant extends Store {
         ACS = newACS;
     }
 
-
     // Methods
     public int getACS() { return ACS; }
 
     public int setACS(int newACS) {
-        ACS = newACS;
+        this.ACS = newACS;
         return ACS;
     }
     
     public double getAvgPrice() { return avgPrice; }
     
     public double setAvgPrice(double newPrice) {
-        avgPrice = newPrice;
+        this.avgPrice = newPrice;
         return avgPrice;
     }
 
     public double avgYearlyTax() {
-        double taxTotal = (avgPrice * ACS) * (Store.TAX_RATE / 100);
+        double taxTotal = (double) (avgPrice * ACS) * (Store.TAX_RATE / 100);
         return taxTotal;
     }
 
-
+    @Override
+    public String toString() {
+        String str = "";
+        str += "This restaurant has served " + this.ACS + " customers this year!\n" + 
+                "The average price per customer is $" + this.avgPrice + ".";
+        return str;
+    }
 }
