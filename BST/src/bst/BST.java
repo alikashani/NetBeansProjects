@@ -113,13 +113,13 @@ public class BST <T extends Comparable<T>> implements Iterable<T>
       if (p == null)
          return false;
       else
-      if (compare(toSearch, p.data) == 0)
-      	return true;
-      else
-      if (compare(toSearch, p.data) < 0)
-         return search(p.left, toSearch);
-      else
-         return search(p.right, toSearch);
+         if (compare(toSearch, p.data) == 0)
+         	return true;
+         else
+            if (compare(toSearch, p.data) < 0)
+               return search(p.left, toSearch);
+            else
+               return search(p.right, toSearch);
    }
 
 /*****************************************************
